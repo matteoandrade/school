@@ -1,0 +1,12 @@
+﻿select * from seattle order by "Last_Name" ;
+select * from seattle order by "Hourly_Rate" desc limit 5;
+select * from seattle order by "Hourly_Rate" desc;
+select * from seattle order by "Department", "Hourly_Rate" desc;
+select AVG(Hourly_Rate) from seattle;
+select SUM(Hourly_Rate), Department from seattle group by Department;
+select * from seattle order by "Hourly_Rate" desc limit 10;
+select Count(First_Name), Department from seattle where Department = "Parks & Recreation";
+select Count(First_Name), Department from seattle group by Department;
+select distinct Job_Title from seattle;
+select COUNT(First_Name), Job_Title from seattle where Job_Title like "Pol Ofcr%";
+select AVG(Hourly_Rate) from seattle where Department = "Information Technology";
